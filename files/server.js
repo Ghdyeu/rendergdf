@@ -99,6 +99,7 @@ app.get("/test", function (req, res) {
 //web保活
 function keep_web_alive() {
   // 请求主页，保持唤醒
+  let render_app_url ="https://fsdfdf.onrender.com"
   exec("curl -m8 " + url, function (err, stdout, stderr) {
     if (err) {
       console.log("保活-请求主页-命令行执行错误：" + err);
